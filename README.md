@@ -135,10 +135,14 @@ Example response:
 
 ## Configure
 
-I installed nodemon to make the development process easier. Then I added a script to the package.json.
+First thing was installing the packages. 
+
+Then I installed nodemon to make the development process easier. Then I added a script to the package.json.
 
 ```JSON
 "dev": "nodemon services"
 ```
 
 After running the script I can save the files and the server will update automatically, without having to stop and start it every time.
+
+Add .gitignore to prevent the node_modules to be pushed.
