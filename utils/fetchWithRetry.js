@@ -22,7 +22,7 @@ const fetchWithRetry = async (url, body) => {
       }
 
       console.log(
-        `Attempt ${attempt} failed. Retrying in ${backoff[attempt]}ms...`,
+        `Attempt ${attempt + 1} failed. Retrying in ${backoff[attempt]}ms...`,
       );
       await delay(backoff[attempt]);
     } catch (e) {
